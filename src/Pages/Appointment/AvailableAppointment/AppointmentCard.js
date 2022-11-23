@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const AppointmentCard = ({appointment, setBookingTreatement}) => {
-    const {name,slots} = appointment
+    const {name,slots,price} = appointment
     return (
         <div className= 'p-8 text-center duration-300 transform  rounded shadow-lg shadow-slate-200 space-y-5'>
     
@@ -13,8 +13,11 @@ const AppointmentCard = ({appointment, setBookingTreatement}) => {
               slots?.length ? slots[0] : 'Try another day'
           }
       </p>
-      <p className=" text-accent">
+      <p>
         {slots?.length} {slots.length > 1 ?'Spaces':'Space'} Available
+      </p>
+      <p className='font-semibold'>
+        Price ${price}
       </p>
       </div>
       <div>

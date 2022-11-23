@@ -8,8 +8,8 @@ const ServiceCard = ({data}) => {
           <img  className="mx-auto w-20" src={img} alt="" />
       
         <div className='space-y-4'>
-        <p className="text-2xl md:text-2xl text-accent font-bold ">{title}</p>
-        <p className=" text-accent">
+        <p className="text-2xl md:text-2xl text-secondary font-bold ">{title}</p>
+        <p>
           {details}
         </p>
         </div>

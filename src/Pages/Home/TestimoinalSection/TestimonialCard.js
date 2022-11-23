@@ -8,7 +8,7 @@ const TestimonialCard = ({data}) => {
           
         <div className='space-y-4'>
         
-        <p className=" text-black">
+        <p>
           {review}
         </p>
         </div>
@@ -21,7 +21,7 @@ const TestimonialCard = ({data}) => {
           />
           <div className="flex flex-col justify-center">
             <p className="text-lg font-bold capitalize">{title}</p>
-            <p className="text-sm text-gray-800">{city}</p>
+            <p className="text-sm">{city}</p>
           </div>
         </div>
         
